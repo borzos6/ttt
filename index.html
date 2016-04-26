@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hu">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TTT fesztivál</title>
+        <meta name="description" content="TTT fesztivál">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Tűz-Természet-Tilk Fesztivál <small>2014. július 25.</small></h1>  
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <h2>Tervezd Te a TTT plakátját!</h2>
+          <p>
+            <a href="https://dl.dropbox.com/s/y9vfgiftzscak1x/ttt.png" alt="letöltés" class="btn btn-link">
+              <span class="fa-stack fa-lg span-tooltip" data-toggle="tooltip" data-placement="bottom" title="Töltsd le a poszteralapot">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-download fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <i class="fa fa-lg fa-long-arrow-right"></i>
+            <a href="https://www.dropbox.com/sh/5tmdbuxwk69f096/AABW4QDjCW3xJrb_fw9rFXF1a" alt="leskelődés" class="btn btn-link">
+              <span class="fa-stack fa-lg span-tooltip" data-toggle="tooltip" data-placement="bottom" title="Böngészd végig a beküldéseket">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-file-image-o fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            <i class="fa fa-lg fa-long-arrow-right"></i>
+            <a alt="föltöltés" class="lightbox-41592716416962 btn btn-link">
+              <span class="fa-stack fa-lg span-tooltip" data-toggle="tooltip" data-placement="bottom" title="Töltsd föl a saját változatodat">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-cloud-upload fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </p>
+          <p>
+            <a class="lightbox-41592716416962 btn btn-success btn-lg">Benevezek!</a>
+          </p>
+        </div>
+
+          <script src="http://max.jotfor.ms/static/feedback2.js?3.2.2386" type="text/javascript">
+          new JotformFeedback({
+          formId:'41592716416962',
+          base:'http://jotformpro.com/',
+          windowTitle:'Tűz-Természet-Tilk Fesztivál',
+          background:'#FFA500',
+          fontColor:'#FFFFFF',
+          type:1,
+          height:500,
+          width:700
+          });
+          </script>
+        
+
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-1">
+          <div id="posterCarousel" class="carousel slide">
+              <!-- Carousel items to be filled -->
+              <div id="posterCarouselInner" class="carousel-inner">
+                  <div class="active item">
+                      <img src="https://dl.dropbox.com/s/y9vfgiftzscak1x/ttt.png" class="img-responsive" alt="poster">  
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Akik már biztosan ott lesznek:</h3>
+        </div>
+      </div>
+      
+      <div id="participants">
+        <!-- here comes the content -->
+      </div>
+
+    </div>
+     
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/tabletop.js"></script>
+
+
+    <script type="text/javascript">
+      window.onload = function() { init() };
+
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/17Y1qknc8SdPWct3dCSeZcWenZnoa9lu05Ed_qxILMoQ/pubhtml';
+
+      var poster_url = [
+        "https://dl.dropbox.com/s/upez6mtf4ykza8s/ttt1.png",
+        "https://dl.dropbox.com/s/dysf9kay9yst0np/ttt2.png",
+        "https://dl.dropbox.com/s/emd1k5q8zmpkptc/ttt1.jpg",
+        "https://dl.dropbox.com/s/o9vzxux71po6o47/ttt2.jpg",
+        "https://dl.dropbox.com/s/r59c2ode4bcceag/ttt3.jpg",
+        "https://dl.dropbox.com/s/xigq700e9aoty9w/ttt_km.png",
+        "https://dl.dropbox.com/s/bmlhh0rtyoj03zw/A%20k%C3%A9p%20nem%20k%C3%ADv%C3%A1nja%20a%20rendezv%C3%A9ny%20hangulat%C3%A1t%20k%C3%B6zvet%C3%ADteni%2C%20puszt%C3%A1n%20sz%C3%A9less%C3%A1v%C3%BA%20vizu%C3%A1lis%20gerjeszt%C3%A9sk%C3%A9nt%20szolg%C3%A1l.png",
+        "https://dl.dropbox.com/s/gfvvby63fa4rr4l/ttt.png",
+        "https://dl.dropbox.com/s/adlrnlw5iys10yl/MIBAJLEHET.png",
+        "https://dl.dropbox.com/s/8bempoaxyha8f5g/ttt2.png",
+        "https://dl.dropbox.com/s/iwduwwo14gn919s/ttt4.png",
+        "https://dl.dropbox.com/s/w1m17gk5sc2jfa7/ttt5.png",
+        "https://dl.dropbox.com/s/anvhbrem3xcd3vm/t%C3%B6ltel%C3%A9k.png",
+        "https://dl.dropbox.com/s/y6wctpj5dzjm2c2/ttt%20-%20Mesi2.jpg",
+        "https://dl.dropbox.com/s/xv754c6mhkn6a4c/ttt%20-%20MESI3.jpg",
+        "https://dl.dropbox.com/s/3koamtyewtzukd1/ttt-MESI1.jpg",
+        "https://dl.dropbox.com/s/9gq7s9kgbzpb0wi/kukac.jpg",
+        "https://dl.dropbox.com/s/c6ul0sqn1jynr46/ttt-borso.jpg",
+        "https://dl.dropbox.com/s/l71hh4pb9px4yoz/TenTaclemonsTers.png"
+        ];
+
+      var participants = $('#participants');
+
+      /**
+       * Randomize array element order in-place.
+       * Using Fisher-Yates shuffle algorithm.
+       */
+      function shuffleArray(array) {
+          for (var i = array.length - 1; i > 0; i--) {
+              var j = Math.floor(Math.random() * (i + 1));
+              var temp = array[i];
+              array[i] = array[j];
+              array[j] = temp;
+          }
+          return array;
+      }
+
+      function fillCarousel(){
+        shuffleArray(poster_url);
+
+        $.each(poster_url, function(index, value){
+          $('#posterCarouselInner').append('<div class=\"item\"><img src=\"' + value + '\" class=\"img-responsive\" alt=\"poster\"></div>');
+        })
+      }
+
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } )
+      }
+
+      function showInfo(data, tabletop) {
+
+        shuffleArray(data);
+
+        var arrayLength = data.length;
+        for (var i = 0; i < arrayLength; i++) {
+          // thanks privacy freaks
+          if (data[i].id == 1) {
+            participants.append("<div class=\"profile-thumbnail opaq\"><a class=\"\" href=\"http://facebook.com/andras.kallai\"><img class=\"img-responsive img-circle center-block\" src=\"http://ttt.szimpatikus.hu/img/userphoto/KA.jpg\" height=\"148\" width=\"148\" alt=\"" + data[i].name + "\"></a><h5 class=\"text-center\">" + data[i].name + "</h5><p class=\"text-center\">" + data[i].nick + "</p>");
+          } else if (data[i].id == 2) {
+            participants.append("<div class=\"profile-thumbnail opaq\"><a class=\"\" href=\"http://facebook.com/csernatony\"><img class=\"img-responsive img-circle center-block\" src=\"http://ttt.szimpatikus.hu/img/userphoto/CsZ.jpg\" height=\"148\" width=\"148\" alt=\"" + data[i].name + "\"></a><h5 class=\"text-center\">" + data[i].name + "</h5><p class=\"text-center\">" + data[i].nick + "</p>");
+          } else if (data[i].id == 3) {
+            participants.append("<div class=\"profile-thumbnail opaq\"><a class=\"\" href=\"http://facebook.com/3\"><img class=\"img-responsive img-circle center-block\" src=\"http://ttt.szimpatikus.hu/img/userphoto/PA.jpg\" height=\"148\" width=\"148\" alt=\"" + data[i].name + "\"></a><h5 class=\"text-center\">" + data[i].name + "</h5><p class=\"text-center\">" + data[i].nick + "</p>");
+          } else if (data[i].id == 4) {
+            participants.append("<div class=\"profile-thumbnail opaq\"><a class=\"\" href=\"https://www.facebook.com/balazs.boza\"><img class=\"img-responsive img-circle center-block\" src=\"http://ttt.szimpatikus.hu/img/userphoto/BB.jpg\" height=\"148\" width=\"148\" alt=\"" + data[i].name + "\"></a><h5 class=\"text-center\">" + data[i].name + "</h5><p class=\"text-center\">" + data[i].nick + "</p>");
+          } else {
+            participants.append("<div class=\"profile-thumbnail opaq\"><a class=\"\" href=\"http://facebook.com/" + data[i].id + "\"><img class=\"img-responsive img-circle center-block\" src=\"https://graph.facebook.com/" + data[i].id + "/picture?width=140&height=140\" alt=\"" + data[i].name + "\"></a><h5 class=\"text-center\">" + data[i].name + "</h5><p class=\"text-center\">" + data[i].nick + "</p>");
+          }
+        };
+      }
+    </script>
+
+    <script type="text/javascript">
+      $( document ).ready(function() {
+          fillCarousel();
+          $('.carousel').carousel({
+            interval: 5000
+          });
+          $('.span-tooltip').tooltip();
+      });
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46399157-3', 'szimpatikus.hu');
+      ga('send', 'pageview');
+
+    </script>
+
+    </body>
+</html>
