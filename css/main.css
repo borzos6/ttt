@@ -4,15 +4,27 @@
    Author's custom styles
    ========================================================================== */
 
-
 body {
-  font-family: 'Open Sans', sans-serif; font-weight: 300; 
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
 }
 
 h1, h2, h3 {
-  font-family: 'Open Sans', sans-serif; font-weight: 400; 
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
 }
 
+.row.vdivide [class*='col-']:not(:last-child):after {
+    background: #e0e0e0;
+    width: 4px;
+    content: "";
+    display:block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    min-height: 70px;
+}
 .opaq
 {
 opacity: 0.65;
