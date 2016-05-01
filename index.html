@@ -30,6 +30,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.3/tabletop.min.js"></script>
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-46399157-3', 'szimpatikus.hu');
+        ga('send', 'pageview');
+    </script>
 </head>
 <body>
 
@@ -91,24 +99,26 @@
 
     <hr/>
 
-    <div class="row vdivide">
-        <div class="col-md-12">
-            <div class="col-md-6">
-                <div class="pull-right">
-                    <h3>Akik ott lesznek</h3>
+    <div class="row">
+        <div class="row vdivide">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="pull-right">
+                        <h3>Akik ott lesznek</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="pull-left">
-                    <h3>People attending</h3>
+                <div class="col-md-6">
+                    <div class="pull-left">
+                        <h3>People attending</h3>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="container text-center" id="participants">
+            <!-- here comes the content -->
+        </div>
     </div>
 
-    <div class="text-center" id="participants">
-        <!-- here comes the content -->
-    </div>
 
 </div>
 
@@ -130,7 +140,8 @@
     }
 
     function init() {
-        var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1cKqdj3qg0Qsa2s3AkkAmxDMZBzYQc2tOe2tR6MkpkU8/pubhtml';
+        var public_spreadsheet_url = "https://docs.google.com/spreadsheets/d/17Y1qknc8SdPWct3dCSeZcWenZnoa9lu05Ed_qxILMoQ/pubhtml";
+        //var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1cKqdj3qg0Qsa2s3AkkAmxDMZBzYQc2tOe2tR6MkpkU8/pubhtml';
 
         Tabletop.init( { key: public_spreadsheet_url,
             callback: showInfo,

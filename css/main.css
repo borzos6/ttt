@@ -59,8 +59,8 @@ transition: opacity 1s;
 .profile-thumbnail {
     width: 170px;
     height: 215px;
-    float: left;
     margin: 0 5px 5px 2px;
+    display: inline-block;
 }
 
 @media only screen 
