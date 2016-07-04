@@ -50,7 +50,7 @@
             </h2>
         </div>
     </div>
-    <hr/>
+    <hr>
 
     <div class="row vdivide">
         <div class="col-md-12">
@@ -87,7 +87,7 @@
             </div>
         </div>
     </div>
-    <hr/>
+    <hr>
 
     <div class="row text-center">
         <div class="col-md-12">
@@ -97,7 +97,79 @@
         </div>
     </div>
 
-    <hr/>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h2>Tervezd Te a TTT plakátját!</h2>
+            <p>
+              <a href="http://i.imgur.com/qEP1eDl.jpg" alt="letöltés" class="btn btn-link" target="_blank">
+                <span class="fa-stack fa-lg span-tooltip" data-toggle="tooltip" data-placement="bottom" title="Töltsd le a poszteralapot">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-download fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <i class="fa fa-lg fa-long-arrow-right"></i>
+              <a href="https://drive.google.com/folderview?id=0BwTQw9yiiczfN3VfZGhBUkh6Rmc&usp=sharing" alt="leskelődés" class="btn btn-link"target="_blank">
+                <span class="fa-stack fa-lg span-tooltip" data-toggle="tooltip" data-placement="bottom" title="Böngészd végig a beküldéseket">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-file-image-o fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <i class="fa fa-lg fa-long-arrow-right"></i>
+              <a alt="föltöltés" class="lightbox-61857129396367 btn btn-link">
+                <span class="fa-stack fa-lg span-tooltip" data-toggle="tooltip" data-placement="bottom" title="Töltsd föl a saját változatodat">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-cloud-upload fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </p>
+            <p>
+              <a class="lightbox-61857129396367 btn btn-success btn-lg">Benevezek!</a>
+            </p>
+            <hr>
+            <div class="well">
+                <strong>Alternatív feladatként találj vagy alkoss olyan képet, amelyhez tökéletesen illik a következő képcím:</strong>
+                <blockquote>
+                  <p>Akárhogy próbáltam, ma sem kaptam grafika ötöst, mindig gulyásleves lett.</p>
+                </blockquote>
+            </div>
+        </div> <!-- /.col-md-6 -->
+        <div class="col-md-6">
+            <div id="poster-carousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <!-- <ol class="carousel-indicators"> -->
+                <!-- <li data-target="#poster-carousel" data-slide-to="0" class="active"></li> -->
+                <!-- <li data-target="#poster-carousel" data-slide-to="1"></li> -->
+                <!-- <li data-target="#poster-carousel" data-slide-to="2"></li> -->
+              <!-- </ol> -->
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/ttt-poszter.png">
+                </div>
+                <div class="item">
+                  <img src="https://googledrive.com/host/0BwTQw9yiiczfRWRTMmV2WGJ3SUk/ttt-poszter-mood.png">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#poster-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Előző</span>
+              </a>
+              <a class="right carousel-control" href="#poster-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Következő</span>
+              </a>
+            </div>
+        </div> <!-- /.col-md-6 -->
+    </div> <!-- /.row -->
+
+    <script src="https://form.jotformeu.com/static/feedback2.js?3.3.REV" type="text/javascript"> var JFL_61857129396367 = new JotformFeedback({ formId: '61857129396367', base: 'https://form.jotformeu.com/', windowTitle: 'Tűz-Természet-Tilk Fesztivál', background: '#FFA500', fontColor: '#FFFFFF', type: 'false', height: 500, width: 700, openOnLoad: false }); </script>
+
+    <hr>
 
     <div class="row">
         <div class="row vdivide">
@@ -166,6 +238,17 @@
             }
         };
     }
+</script>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+      // fillCarousel();
+      // $('.carousel').carousel({
+      //   interval: 5000
+      // });
+      $('.span-tooltip').tooltip();
+      $('.carousel').carousel();
+  });
 </script>
 </body>
 </html>
